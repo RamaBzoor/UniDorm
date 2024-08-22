@@ -1,0 +1,17 @@
+.propertiesNearYou {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.propertiesNearYou .container .propertiesList {
+  display: grid;
+  grid-template-columns: repeat(3, 313px);
+  place-content: center;
+  gap: 27px;
+}
+
+@media (max-width: 1060px) {
+  .propertiesNearYou .container .propertiesList {
+    grid-template-columns: repeat(auto-fill, 313px);
+  }
+}

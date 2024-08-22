@@ -1,0 +1,109 @@
+.dashboardProfileForm {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+}
+
+.dashboardProfileForm h3 {
+  color: var(--primary-100);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  grid-column: span 8;
+}
+
+.dashboardProfileForm input,
+.dashboardProfileForm div {
+  grid-column: span 4;
+}
+
+.dashboardProfileForm input[name="countryCode"] {
+  grid-column: span 2;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.dashboardProfileForm input[name="phoneNumber"] {
+  grid-column: span 2;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.dashboardProfileForm input[name="name"] {
+  grid-column: span 8;
+}
+
+.dashboardProfileForm input[name="address"] {
+  grid-column: span 8;
+}
+
+.paymentMethodsCards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.paymentMethodsCardsHeading {
+  color: var(--primary-100);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.paymentMethodsCards .paymentMethodsCard {
+  border-radius: 8px;
+  border: 1px solid var(--Gray-Scale-Gray-100, #e6e6e6);
+  background: var(--Gray-Scale-White, #fff);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+}
+
+.paymentMethodsCards .paymentMethodsCard h4 {
+  color: var(--secondary-100);
+  font-family: Roboto;
+  line-height: 150%; /* 24px */
+  text-align: center;
+}
+
+.paymentMethodsCards .paymentMethodsCard div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(131, 134, 145, 0.6);
+}
+
+.paymentMethodsCards .paymentMethodsCard div span {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+}
+
+.paymentMethodsCards .paymentMethodsCard div span:first-child {
+  color: var(--Black-40, #6e7079);
+}
+
+.paymentMethodsCards .paymentMethodsCard div span:last-child {
+  color: var(--Gray-Scale-Gray-900, #1a1a1a);
+  font-weight: 500;
+}
+
+.paymentMethodsCards .paymentMethodsCard div:last-child {
+  border-bottom: none;
+}
+
+.paymentMethodsButton {
+  border-radius: 12px;
+  border: 1px solid var(--White, #fff);
+  background: var(--secondary-100);
+  color: #fff;
+  padding: 17px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  cursor: pointer;
+}

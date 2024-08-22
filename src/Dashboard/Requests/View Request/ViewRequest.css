@@ -1,0 +1,197 @@
+.viewRequests .container .content .requestImportantData {
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+  .viewRequests .container .content .requestImportantData {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+.viewRequests .container .content .requestImportantData .status {
+  position: relative;
+}
+
+.viewRequests .container .content .requestImportantData .status button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  padding: 8px 4px;
+  border-radius: 15px;
+  width: 140px;
+}
+
+.viewRequests .container .content .requestImportantData .status button img {
+  width: 18px;
+  aspect-ratio: 1;
+}
+
+.viewRequests
+  .container
+  .content
+  .requestImportantData
+  .status
+  button[data-status="approved"] {
+  background-color: #e7f8f7;
+  color: #33c5bd;
+}
+
+.viewRequests
+  .container
+  .content
+  .requestImportantData
+  .status
+  [data-status="approved"] {
+  background-color: #e7f8f7;
+  color: #33c5bd;
+}
+
+.viewRequests
+  .container
+  .content
+  .requestImportantData
+  .status
+  [data-status="declined"] {
+  background-color: #e0121212;
+  color: #ff3e3e;
+}
+
+.viewRequests
+  .container
+  .content
+  .requestImportantData
+  .status
+  [data-status="pending"] {
+  background-color: #fff3e5;
+  color: #fcab44;
+}
+
+.viewRequests
+  .container
+  .content
+  .requestImportantData
+  .status
+  .statusDropDown {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 50px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.viewRequests
+  .container
+  .content
+  .requestImportantData
+  .status
+  .statusDropDown
+  li {
+  padding: 8px 4px;
+  cursor: pointer;
+}
+
+.viewRequests .container .content .requestBox {
+  border-radius: 6px;
+  border: 1px solid var(--Gray-Scale-Gray-100, #e6e6e6);
+  background: var(--Gray-Scale-White, #fff);
+  margin-top: 30px;
+}
+
+.viewRequests .container .content .requestBox h2 {
+  color: var(--primary-100);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  padding: 20px 30px 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.viewRequests .container .content .requestBox .one {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.viewRequests .container .content .requestBox .one span:nth-child(1) {
+  color: var(--Gray-Scale-Gray-900, #1a1a1a);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+}
+
+.viewRequests .container .content .requestBox .one span:nth-child(2) {
+  color: var(--Black-40, #6e7079);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+}
+
+.viewRequests .container .content .requestBox .data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 15px 30px;
+}
+
+@media (max-width: 768px) {
+  .viewRequests .container .content .requestBox .data {
+    grid-template-columns: 1fr;
+  }
+}
+
+.viewRequests .container .content .requestBox .data .row {
+  display: flex;
+  flex-direction: column;
+}
+
+.viewRequests .container .content .requestBox .data .row span:nth-child(2) {
+  color: var(--Gray-Scale-Gray-900, #1a1a1a);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+}
+
+.viewRequests .container .content .requestBox .data .row span:nth-child(1) {
+  color: var(--Black-40, #6e7079);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+}
+
+.propertyBookingHead {
+  color: #5570f1;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.propertyBookingDetails h4,
+.propertyBookingDetails h5 {
+  color: #5570f1;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.propertyBookingDetails p {
+  color: var(--Black-40, #6e7079);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+}

@@ -1,0 +1,130 @@
+.stagesOfPayment {
+  --active-color: #1dcc00;
+  --unactive-color: #d9d9d9;
+  width: 680px;
+  display: flex;
+  justify-content: space-between;
+  margin: 56px auto;
+}
+
+@media (max-width: 768px) {
+  .stagesOfPayment {
+    width: 282px;
+  }
+}
+
+.stagesOfPayment div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--unactive-color);
+  transition: 600ms ease-in-out;
+}
+
+.stagesOfPayment[data-contact="true"] div:nth-child(1) {
+  color: var(--active-color);
+}
+
+.stagesOfPayment[data-contact="true"] div:nth-child(1) span:first-child {
+  border-color: var(--active-color);
+}
+
+.stagesOfPayment div span:first-child {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--unactive-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: 500;
+}
+
+.stagesOfPayment div:nth-child(2) span:first-child::before,
+.stagesOfPayment div:nth-child(3) span:first-child::before {
+  content: "";
+  position: absolute;
+  width: 265px;
+  height: 3px;
+  background-color: var(--unactive-color);
+  right: 100%;
+  transition: 600ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .stagesOfPayment div:nth-child(2) span:first-child::before,
+  .stagesOfPayment div:nth-child(3) span:first-child::before {
+    width: 66px;
+  }
+}
+
+.stagesOfPayment[data-payment="true"] div:nth-child(2) {
+  color: var(--active-color);
+}
+
+.stagesOfPayment[data-payment="true"] div:nth-child(2) span:first-child {
+  border-color: var(--active-color);
+}
+
+.stagesOfPayment[data-payment="true"]
+  div:nth-child(2)
+  span:first-child::before {
+  background-color: var(--active-color);
+}
+
+.stagesOfPayment[data-review="true"] div:nth-child(3) {
+  color: var(--active-color);
+}
+
+.stagesOfPayment[data-review="true"] div:nth-child(3) span:first-child {
+  border-color: var(--active-color);
+}
+
+.stagesOfPayment[data-review="true"] div:nth-child(3) span:first-child::before {
+  background-color: var(--active-color);
+}
+
+.nextBtnContainer {
+  width: 926px;
+  margin: 54px auto;
+}
+
+@media (max-width: 961px) {
+  .nextBtnContainer {
+    width: calc(100% - 30px);
+  }
+}
+
+.nextBtnContainer a {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  background-color: var(--primary-100);
+  color: #fff;
+  font-size: 14px;
+  padding: 16px 20px;
+  width: 130px;
+  border-radius: 12px;
+  transition: background-color 400ms;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nextBtnContainer a:hover {
+  background-color: var(--primary-80);
+}
+
+@media (max-width: 768px) {
+  .nextBtnContainer a {
+    width: 100%;
+  }
+}
+
+.nextBtnContainer a img {
+  width: 20px;
+  aspect-ratio: 1;
+}

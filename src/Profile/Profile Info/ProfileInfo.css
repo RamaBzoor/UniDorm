@@ -1,0 +1,172 @@
+.profileInfo {
+  padding-top: 80px;
+}
+
+.profileInfo .container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (max-width: 1200px) {
+  .profileInfo .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.profileInfo .container .pfpAndName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileInfo .container .pfpAndName img {
+  width: 154px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.profileInfo .container .pfpAndName h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.profileInfo .container .moreUserInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 12px;
+}
+
+@media (max-width: 1440px) {
+  .profileInfo .container .moreUserInfo {
+    flex-direction: column;
+  }
+}
+
+.profileInfo .container .moreUserInfo .moreUserInfoBox {
+  display: grid;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 32px 0px rgba(61, 70, 112, 0.08);
+  border-radius: 8px;
+  height: 197px;
+  padding: 24px;
+}
+
+.profileInfo .container .moreUserInfo .moreUserInfoBox:first-child {
+  flex-basis: 65%;
+}
+
+.profileInfo .container .moreUserInfo .moreUserInfoBox:last-child {
+  flex-basis: 55%;
+}
+
+@media (max-width: 1440px) {
+  .profileInfo .container .moreUserInfo .moreUserInfoBox {
+    flex-basis: 100% !important;
+    width: 100%;
+  }
+}
+
+.profileInfo .container .moreUserInfo .moreUserInfoBox:first-child h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 19px;
+}
+
+.profileInfo
+  .container
+  .moreUserInfo
+  .moreUserInfoBox:first-child
+  .userContactInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  column-gap: 20px;
+  row-gap: 10px;
+  width: 425px;
+}
+
+.profileInfo
+  .container
+  .moreUserInfo
+  .moreUserInfoBox:first-child
+  .userContactInfo
+  span {
+  color: var(--Black-20, #a6a8b1);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.profileInfo
+  .container
+  .moreUserInfo
+  .moreUserInfoBox:first-child
+  .userContactInfo
+  span
+  img {
+  width: 16px;
+  height: 16px;
+}
+
+.profileInfo .container .moreUserInfo .moreUserInfoBox:last-child img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 12px;
+}
+
+.profileInfo
+  .container
+  .moreUserInfo
+  .moreUserInfoBox:last-child
+  .someMoreInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  column-gap: 32px;
+  row-gap: 10px;
+}
+
+@media (max-width: 1440px) {
+  .profileInfo
+    .container
+    .moreUserInfo
+    .moreUserInfoBox:first-child
+    .userContactInfo {
+    width: 100%;
+  }
+}
+
+.profileInfo
+  .container
+  .moreUserInfo
+  .moreUserInfoBox:last-child
+  .someMoreInfo
+  div {
+  display: flex;
+  flex-direction: column;
+  color: var(--icons, #667085);
+  font-size: 14px;
+  gap: 15px;
+}
+
+.profileInfo
+  .container
+  .moreUserInfo
+  .moreUserInfoBox:last-child
+  .someMoreInfo
+  div
+  span {
+  color: var(--Primary1, #363738);
+  font-size: 20px;
+}

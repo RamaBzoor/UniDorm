@@ -1,0 +1,7 @@
+fix images glitching when changing lang
+
+make filter
+
+make arabic better
+
+rename classes

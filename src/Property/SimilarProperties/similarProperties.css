@@ -1,0 +1,74 @@
+.container .similarPropertiesContainer {
+  margin-top: 212px;
+}
+
+.container .similarPropertiesContainer .similarPropertiesHeading {
+  display: flex;
+  align-items: center;
+}
+
+.container .similarPropertiesContainer .similarPropertiesHeading p {
+  color: #5570f1;
+
+  /* subHeading 2/Medium */
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.container .similarPropertiesContainer .similarPropertiesHeading::before {
+  content: "";
+  width: 41px;
+  height: 37px;
+  opacity: 0.34;
+  border-radius: 41px;
+  background-color: #f6d79d;
+}
+
+.container .similarPropertiesContainer .similarPropertiesContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 313px);
+  justify-content: center;
+  margin-top: 23px;
+  gap: 18px;
+  margin-bottom: 106px;
+  position: relative;
+}
+
+.container .similarPropertiesContainer .similarPropertiesContent .Checkbtn {
+  background-color: var(--primary-100);
+  color: #fff;
+  font-size: 14px;
+  width: 192px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  translate: 0;
+}
+
+.container .similarPropertiesContainer .similarPropertiesContent button {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f5f5f5;
+  left: 50%;
+  translate: -50%;
+  bottom: -60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 46px;
+  cursor: pointer;
+}
+
+.container .similarPropertiesContainer .similarPropertiesContent button img {
+  width: 24px;
+  height: 24px;
+}

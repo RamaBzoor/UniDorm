@@ -1,0 +1,30 @@
+.getStarted {
+  margin-top: 191px;
+  margin-bottom: 301px;
+}
+
+.getStarted .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.getStarted .container img {
+  max-width: 970px;
+}
+
+.getStarted .container p {
+  color: var(--Secondary-100, #f8b32e);
+
+  /* subHeading 1/Bold */
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.getStarted .container span {
+  color: #5570f1;
+}

@@ -1,0 +1,57 @@
+.editBooking .container .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .editBooking .container .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.editBooking .container .content .columnOne h2,
+.editBooking .container .content .columnTwo h2 {
+  color: var(--Primary-100, #5570f1);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.editBooking .container .content .columnOne,
+.editBooking .container .content .columnTwo {
+  flex-basis: calc(50% - 32.5px);
+}
+
+.editBooking .container .content .columnOne .form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  row-gap: 8px;
+  column-gap: 13px;
+}
+
+.editBooking .container .content .columnOne .form input,
+.editBooking .container .content .columnOne .form textarea {
+  grid-column: 5 span;
+}
+
+.editBooking .container .content .columnOne .form input[name="month"] {
+  grid-column: 4 span;
+}
+
+.editBooking .container .content .columnOne .form input[name="year"] {
+  grid-column: 1 span;
+}
+
+.editBooking .container .content .columnOne .form textarea {
+  grid-row: 3 span;
+}
+
+.editBooking .container .content .columnTwo .form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}

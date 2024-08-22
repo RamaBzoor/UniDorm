@@ -1,0 +1,168 @@
+.signInAllPage {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.signInPage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10% 0;
+}
+
+.signInPage .imgContainer img {
+  width: 394px;
+  height: auto;
+  display: none;
+}
+
+.signInPage .signInForm {
+  display: flex;
+  padding: 31px 27px 36px 27px;
+  flex-direction: column;
+  align-items: center;
+  gap: 49px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+}
+
+.signInPage .signInForm .pageHeading p {
+  text-align: center;
+}
+
+.signInPage .signInForm .pageHeading p:nth-child(1) {
+  color: #5570f1;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.signInPage .signInForm .signInContent {
+  gap: 28px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.signInPage .signInForm .signInContent form {
+  gap: 17px;
+  display: flex;
+  width: 589px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signInPage .signInForm .signInContent form .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.signInPage .signInForm .signInContent form .inputs input.invalid {
+  outline: 2px solid red;
+}
+
+.signInPage .signInForm .signInContent form .inputs .forgotPassword {
+  color: #6e7079;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.signInPage .signInForm .signInContent form .signInButton {
+  width: 100%;
+}
+
+.signInPage .signInForm .signInContent form .signInButton button {
+  display: flex;
+  width: 100%;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  opacity: 0.6;
+  background: #585acb;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.signInPage .signInForm .signInContent form .signInButton button:hover {
+  opacity: 1;
+}
+
+.signInPage .signInForm .signInContent .signUporIn p {
+  color: #33343a;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+}
+
+.signInPage .signInForm .signInContent .signUporIn p a {
+  color: #5570f1;
+  font-family: Roboto;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 32px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.signInPage .signInForm .signInContent .signUporIn p a:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 700px) {
+  .signInPage .imgContainer img {
+    width: 250px;
+    height: auto;
+  }
+
+  .signInPage .signInForm {
+    padding: 21px 17px 26px 17px;
+  }
+  .signInPage .signInForm .signInContent form {
+    max-width: 260px;
+  }
+}
+
+.passwordInputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 18.5px;
+  height: 15.774px;
+}
+
+/* Rest of your styles */
+
+.ForgotPassDetails {
+  color: var(--Black-90, #2c2d33);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}

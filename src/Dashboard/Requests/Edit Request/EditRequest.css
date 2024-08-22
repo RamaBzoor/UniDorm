@@ -1,0 +1,23 @@
+.editRequest .container .content .form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px 20px;
+  margin-top: 40px;
+}
+
+.editRequest .container .content .form input,
+.editRequest .container .content .form textarea {
+  grid-column: 2 span;
+  display: flex;
+  justify-content: center;
+}
+
+.editRequest .container .content .form input[name="date"],
+.editRequest .container .content .form input[name="time"] {
+  grid-column: 1 span;
+}
+
+.editRequest .container .content .form textarea {
+  grid-row: 2 span;
+}

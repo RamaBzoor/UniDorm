@@ -1,0 +1,28 @@
+const Images = {
+  blog1: `${process.env.PUBLIC_URL}/images/blog-image-1.webp`,
+  blog2: `${process.env.PUBLIC_URL}/images/blog-image-2.webp`,
+  blog3: `${process.env.PUBLIC_URL}/images/blog-image-3.webp`,
+  MainHero: `${process.env.PUBLIC_URL}/images/heroPhoto.webp`,
+  OfferImg: `${process.env.PUBLIC_URL}/images/offer-img.webp`,
+  pfp: `${process.env.PUBLIC_URL}/images/pfp.webp`,
+  sally: `${process.env.PUBLIC_URL}/images/Sally.webp`,
+  map: `${process.env.PUBLIC_URL}/images/map.webp`,
+  ellipse: `${process.env.PUBLIC_URL}/images/ellipse.webp`,
+  Defaultpfp: `${process.env.PUBLIC_URL}/images/pfpDefault.webp`,
+  Error: `${process.env.PUBLIC_URL}/images/ErrorMain.svg`,
+  ShakingHands: `${process.env.PUBLIC_URL}/images/Shaking.webp`,
+  ListAPropHero: `${process.env.PUBLIC_URL}/images/ListAPropHeroPhoto.webp`,
+  Texture: `${process.env.PUBLIC_URL}/images/texture.webp`,
+  Reason1: `${process.env.PUBLIC_URL}/images/amico.svg`,
+  Reason2: `${process.env.PUBLIC_URL}/images/amico1.svg`,
+  Reason3: `${process.env.PUBLIC_URL}/images/rafiki.svg`,
+  oneReview: `${process.env.PUBLIC_URL}/images/OneReviewPhoto.webp`,
+  PhoneProfile: `${process.env.PUBLIC_URL}/images/cuate.svg`,
+  onRock: `${process.env.PUBLIC_URL}/images/manOnRock.svg`,
+  Coins: `${process.env.PUBLIC_URL}/images/coins.svg`,
+  Line: `${process.env.PUBLIC_URL}/images/Line.svg`,
+  emptyUploadField: `${process.env.PUBLIC_URL}/images/icons/emptyImgField.svg`,
+  GetStartedImg: `${process.env.PUBLIC_URL}/images/GetStartedImg.webp`,
+};
+
+export default Images;

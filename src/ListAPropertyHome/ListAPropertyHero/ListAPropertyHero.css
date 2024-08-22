@@ -1,0 +1,35 @@
+.hero .container .listImg img {
+  max-width: 427px;
+  max-height: 277px;
+  border-radius: 18px;
+  z-index: 1;
+}
+
+/* .hero .container .listImg::before {
+  content: "";
+  background-image: url(../../../public/images/texture.webp);
+  position: absolute;
+  align-self: flex-end;
+  top: 50px;
+  right: -84px;
+  width: 291.59px;
+  height: 270.458px;
+} */
+
+.hero .container .listImgAr img {
+  max-width: 427px;
+  max-height: 277px;
+  border-radius: 18px;
+  z-index: 1;
+}
+
+.hero .container .listImgAr::before {
+  content: "";
+  background-image: url(../../../public/images/texture.webp);
+  position: absolute;
+  align-self: flex-end;
+  top: 50px;
+  right: 190px;
+  width: 291.59px;
+  height: 270.458px;
+}

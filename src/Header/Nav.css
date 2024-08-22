@@ -1,0 +1,316 @@
+@media (max-width: 500px) {
+  .mobileContainer {
+    flex-direction: column;
+  }
+}
+
+.LogoImage {
+  width: 112px;
+  height: 24px;
+}
+
+header {
+  margin-top: 30px;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav,
+.gathered,
+nav .gathered ul {
+  display: flex;
+}
+
+nav .gathered {
+  align-items: center;
+}
+
+nav .gathered ul {
+  margin-right: 75px;
+}
+
+nav .gathered ul li {
+  margin-left: 48px;
+}
+
+nav .gathered ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+  text-wrap: nowrap;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .gathered ul li a:hover,
+.menuScreen ul li a:hover {
+  color: var(--primary-100);
+}
+
+nav .gathered ul li a::after {
+  color: var(--primary-100);
+  width: 0%;
+  height: 3px;
+  color: var(--primary-100);
+  transition: width 0.3s ease-in-out 0.2s; /* Delayed transition for width */
+}
+
+nav .gathered ul li a.active {
+  color: var(--primary-100);
+  width: 100%;
+  border-radius: 18px;
+  transition: all 3s ease-in-out;
+}
+
+/* To make the animation work when active :) */
+nav .gathered ul li a::after {
+  content: "";
+}
+
+nav .gathered ul li a.active {
+  color: var(--primary-100) !important;
+  position: relative;
+}
+
+nav .gathered ul li .active::after {
+  position: absolute;
+  width: 60%; /* Initial width */
+  border-radius: 18px;
+  bottom: -6px;
+  left: 0;
+  height: 3px;
+  background-color: var(--primary-80);
+}
+
+header .container nav .notSignedIn {
+  display: flex;
+  column-gap: 11px;
+  font-weight: 500;
+  align-items: center;
+}
+
+header .container nav .notSignedIn a {
+  padding: 0 16px;
+  background-color: var(--secondary-100);
+  color: var(--white);
+  border-radius: 12px;
+  text-decoration: none;
+  width: fit-content;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+  justify-content: center;
+  text-wrap: nowrap;
+}
+
+header .container nav .notSignedIn .myProfile {
+  display: flex;
+  text-wrap: nowrap;
+  gap: 4px;
+  color: #1c1d22;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  justify-content: center;
+}
+
+header .container nav .notSignedIn {
+  position: relative;
+}
+
+header .container nav .notSignedIn .signIn {
+  background-color: var(--primary-100);
+}
+
+header .container nav .notSignedIn .listAProp {
+  background-color: var(--secondary-100);
+}
+
+header .container nav .notSignedIn .signIn:hover {
+  background-color: var(--primary-80);
+}
+
+header .container nav .notSignedIn .listAProp:hover {
+  background-color: var(--secondary-80);
+}
+
+header .container nav .notSignedIn .myProfile {
+  display: flex;
+  align-items: center;
+}
+
+header .container nav .notSignedIn .myProfile a:nth-child(2) {
+  display: flex;
+  background: none;
+  align-items: center;
+  color: #1c1d22;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+
+header .container nav .notSignedIn .myProfile .Defaultpfp {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+header .container nav .notSignedIn .myProfile img {
+  display: flex;
+  text-wrap: nowrap;
+  width: 16px;
+  cursor: pointer;
+  transition: 400ms;
+  height: 16px;
+}
+
+header .container nav .notSignedIn .myProfileMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin-top: 33px;
+  padding: 5px 12px;
+  background-color: var(--white);
+  top: 10px;
+  z-index: 19;
+  border-radius: 5px;
+  transition: 400ms;
+}
+
+header .container nav .notSignedIn .myProfileMenu a {
+  padding: 0;
+  background-color: transparent;
+  color: #1c1d22;
+  border-radius: 0;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  display: flex;
+  transition: 400ms;
+  align-items: center;
+  justify-content: center;
+}
+
+header .container nav .notSignedIn .myProfileMenu a:hover {
+  background: none;
+  color: var(--primary-100);
+}
+
+.myProfileMenuHidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+}
+
+@media (max-width: 992px) {
+  nav .gathered,
+  .langs {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu {
+    display: none;
+  }
+  .menuScreen {
+    display: none;
+  }
+}
+
+.menu {
+  width: 24px;
+  height: 24px;
+  position: fixed;
+  z-index: 1001;
+  cursor: pointer;
+  right: 15px;
+}
+
+.menu div {
+  height: 3px;
+  width: 30px;
+  background-color: #45464e;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+}
+
+.menu div:nth-child(1) {
+  top: 6px;
+}
+
+.menu div:nth-child(2) {
+  top: 12px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu div:nth-child(3) {
+  top: 18px;
+}
+
+.menu div:nth-child(2).open {
+  opacity: 0;
+}
+
+.menu div:nth-child(1).open {
+  transform: rotate(38deg);
+}
+
+.menu div:nth-child(3).open {
+  transform: rotate(-38deg);
+  top: 6px;
+}
+
+.menuScreen {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  background-color: #f9f9fa;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  transition: left 0.5s ease-in-out;
+}
+
+.menuScreen .langs {
+  display: block;
+}
+
+.menuScreen.open {
+  left: 0;
+}
+
+.menuScreen ul {
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.menuScreen ul li {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menuScreen ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 30px;
+  transition: color 0.3s ease-in-out;
+  text-wrap: nowrap;
+}
+
+.menuScreen ul li a.active {
+  color: var(--primary-100);
+}

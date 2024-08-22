@@ -1,0 +1,115 @@
+.container .aminitiesContainer,
+.container .facilitiesContainer {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.container .facilitiesContainer .facilitiesHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .aminitiesContainer .aminitiesHeader h3,
+.container .facilitiesContainer .facilitiesHeader h3 {
+  color: #1c1d22;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.container .aminitiesContainer .aminitiesComponents {
+  display: flex;
+  max-width: 325px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.container .aminitiesContainer .aminitiesComponents div {
+  display: flex;
+  height: 30px;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: #5570f1;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  border-radius: 4px;
+  background: rgba(219, 222, 238, 0.59);
+}
+
+.container .facilitiesContainer .facilitiesHeader {
+  margin-bottom: 10px;
+}
+
+.container .facilitiesContainer .facilitiesHeader a {
+  color: var(--Primary-80, #6a6cd1);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration-line: underline;
+}
+
+.facilitiesContainer .facilitiesComponents {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.facilitiesContainer .facilitiesComponents .firstRow {
+  display: flex;
+  gap: 10px;
+}
+
+.facilitiesContainer .facilitiesComponents .firstRow button {
+  display: flex;
+  padding: 4px 10px;
+  align-items: flex-end;
+  gap: 11px;
+  color: var(--Black-50, #53545c);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.facilitiesContainer .facilitiesComponents .firstRow button.active {
+  border-radius: 3px;
+  background: rgba(19, 15, 38, 0.05);
+  color: var(--Black-90, #2c2d33);
+}
+
+.facilitiesContainer .facilitiesComponents .firstRow button img {
+  width: 24px;
+  height: 24px;
+}
+
+.facilitiesContainer .facilitiesComponents .list ul {
+  display: flex;
+  max-width: 250px;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  flex-wrap: wrap;
+  list-style: disc;
+}

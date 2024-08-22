@@ -1,0 +1,77 @@
+.langs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.grouping {
+  display: flex;
+  flex-direction: column;
+}
+
+.langs .grouping .list {
+  display: flex;
+  align-items: center;
+  z-index: 20;
+}
+
+.langs .grouping .list a {
+  color: var(--black-100);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: default;
+  margin-right: 4px;
+}
+
+.down {
+  cursor: pointer;
+  transition: rotate 0.3s ease-in-out;
+  width: auto;
+  height: auto;
+}
+
+.LangSvg {
+  width: auto;
+  height: auto;
+  margin: 0 4px 0 2px;
+}
+
+.rotated {
+  rotate: -90deg;
+}
+
+.rotated-ar {
+  rotate: 90deg;
+}
+
+.dropdown {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 5px 12px;
+  background-color: var(--white);
+  position: absolute;
+  top: 10px;
+  z-index: 19;
+  border-radius: 5px;
+}
+
+.dropdown a {
+  color: var(--black-100);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: default;
+  margin-right: 4px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.dropdown a:hover {
+  color: var(--primary-100);
+}

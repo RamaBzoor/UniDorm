@@ -1,0 +1,57 @@
+.basicInfoPage .container {
+  padding: 0 80px;
+  margin-top: 73px;
+  margin-bottom: 73px;
+}
+
+.basicInfoPage .container .basicInfoContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basicInfoPage .container .basicInfoContent .basicInfoInputs {
+  width: 100%;
+  gap: 9px;
+  margin-top: 27px;
+  display: flex;
+  flex-direction: column;
+}
+
+.basicInfoPage
+  .container
+  .basicInfoContent
+  .basicInfoInputs
+  .personalInfoText
+  p {
+  color: var(--Black-80, #33343a);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.basicInfoPage .container .basicInfoContent .basicInfoInputs .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.basicInfoPage .container .basicInfoContent .basicInfoInputs .inputs .secondRow,
+.basicInfoPage .container .basicInfoContent .basicInfoInputs .inputs .thirdRow {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 450px) {
+  .basicInfoPage
+    .container
+    .basicInfoContent
+    .basicInfoInputs
+    .inputs
+    .thirdRow {
+    flex-direction: column;
+  }
+}

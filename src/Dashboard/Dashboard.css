@@ -1,0 +1,129 @@
+.dashboard .container .content .profileQuikeInfos {
+  display: flex;
+  gap: 32px;
+}
+
+@media (max-width: 1460px) {
+  .dashboard .container .content .profileQuikeInfos {
+    flex-direction: column;
+  }
+}
+
+.dashboard .container .content .profileQuikeInfos .myBox {
+  display: flex;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 32px 0px rgba(61, 70, 112, 0.08);
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.dashboard .container .content .profileQuikeInfos .firstBox {
+  flex-basis: 60%;
+}
+
+@media (max-width: 1460px) {
+  .dashboard .container .content .profileQuikeInfos .firstBox {
+    flex-basis: 100%;
+  }
+
+  .dashboard .container .content .profileQuikeInfos .secondBox {
+    flex-basis: 100%;
+  }
+}
+
+.dashboard .container .content .profileQuikeInfos .firstBox img:first-child {
+  max-width: 130px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dashboard .container .content .profileQuikeInfos .firstBox h3 {
+  font-family: Roboto;
+  font-size: 20px;
+  color: #000;
+  line-height: 150%; /* 30px */
+}
+
+.dashboard .container .content .profileQuikeInfos .firstBox .contactInfo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 210px);
+  gap: 20px;
+}
+
+.dashboard .container .content .profileQuikeInfos .firstBox .contactInfo span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--Black-20, #a6a8b1);
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+.dashboard
+  .container
+  .content
+  .profileQuikeInfos
+  .firstBox
+  .contactInfo
+  span
+  img {
+  width: 16px;
+  aspect-ratio: 1;
+}
+
+.dashboard .container .content .profileQuikeInfos .secondBox {
+  flex-direction: column;
+  flex-basis: 40%;
+}
+
+.dashboard .container .content .profileQuikeInfos .secondBox img {
+  width: 25px;
+  aspect-ratio: 1;
+}
+
+.dashboard .container .content .profileQuikeInfos .secondBox .quikeInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 90px);
+  gap: 32px;
+}
+
+@media (max-width: 991px) {
+  .dashboard .container .content .profileQuikeInfos .secondBox .quikeInfo {
+    grid-template-columns: repeat(2, 90px);
+  }
+}
+
+.dashboard .container .content .profileQuikeInfos .secondBox .quikeInfo div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dashboard
+  .container
+  .content
+  .profileQuikeInfos
+  .secondBox
+  .quikeInfo
+  div
+  span:first-child {
+  color: var(--icons, #667085);
+  font-family: Inter;
+  font-size: 14px;
+}
+
+.dashboard
+  .container
+  .content
+  .profileQuikeInfos
+  .secondBox
+  .quikeInfo
+  div
+  span:last-child {
+  color: var(--Primary1, #363738);
+  font-weight: 500;
+  font-size: 20px;
+}

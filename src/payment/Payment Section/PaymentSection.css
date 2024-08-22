@@ -1,0 +1,225 @@
+.paymentSection h2 {
+  max-width: 670px;
+  color: var(--primary-100);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 auto 61px;
+}
+
+.paymentSection .paymentSectionContainer {
+  max-width: 1056px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.paymentSection .paymentSectionContainer .billingNSummary {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .paymentSection .paymentSectionContainer .billingNSummary {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.paymentSection .paymentSectionContainer .billingNSummary .billing {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+@media (max-width: 991px) {
+  .paymentSection .paymentSectionContainer .billingNSummary .billing {
+    width: fit-content;
+    max-width: 450px;
+  }
+}
+
+.paymentSection .paymentSectionContainer .billingNSummary .billing h3 {
+  color: var(--primary-100);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.paymentSection .paymentSectionContainer .billingNSummary .billing label {
+  display: flex;
+  gap: 8px;
+}
+
+.paymentSection .paymentSectionContainer .billingNSummary .summary {
+  padding: 40px 21px;
+  background-color: var(--white);
+  box-shadow: -2px -2px 4px 0px rgba(0, 0, 0, 0.05),
+    2px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  width: 400px;
+  height: fit-content;
+}
+
+@media (max-width: 768px) {
+  .paymentSection .paymentSectionContainer .billingNSummary .summary {
+    width: fit-content;
+    max-width: 400px;
+  }
+}
+
+.paymentSection .paymentSectionContainer .billingNSummary .summary h3 {
+  color: #3c4242;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 100;
+  width: 100%;
+  border-bottom: 1px solid #edeef2;
+  padding-bottom: 11px;
+}
+
+.paymentSection
+  .paymentSectionContainer
+  .billingNSummary
+  .summary
+  .summaryProperty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 8px;
+  padding: 22px 0;
+  border-bottom: 1px solid #edeef2;
+}
+
+.paymentSection
+  .paymentSectionContainer
+  .billingNSummary
+  .summary
+  .summaryProperty
+  p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+  width: 160px;
+}
+
+.paymentSection
+  .paymentSectionContainer
+  .billingNSummary
+  .summary
+  .summaryProperty
+  .price {
+  color: var(--Black-30, #8b8d97);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.paymentSection
+  .paymentSectionContainer
+  .billingNSummary
+  .summary
+  .summaryProperty
+  .price
+  span {
+  color: var(--primary-100);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+
+.paymentSection .paymentSectionContainer .billingNSummary .summary .calcs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 22px 0;
+}
+
+.paymentSection .paymentSectionContainer .billingNSummary .summary .calcs div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paymentSection
+  .paymentSectionContainer
+  .billingNSummary
+  .summary
+  .calcs
+  div
+  span {
+  color: #3c4242;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.36px;
+}
+
+.paymentSection
+  .paymentSectionContainer
+  .billingNSummary
+  .summary
+  .calcs
+  div:last-child
+  span {
+  font-weight: 700;
+  margin-top: 11px;
+}
+
+.paymentSection .paymentSectionContainer .coupon {
+  max-width: 375px;
+  margin-top: 45px;
+}
+
+@media (max-width: 991px) {
+  .paymentSection .paymentSectionContainer .coupon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.paymentSection .paymentSectionContainer .coupon h3 {
+  color: var(--primary-100);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.paymentSection .paymentSectionContainer .coupon h3 span {
+  color: var(--Black-10, #bec0ca);
+}
+
+.paymentSection .paymentSectionContainer .coupon p {
+  color: var(--Black-20, #a6a8b1);
+  font-size: 14px;
+  margin-bottom: 17px;
+}
+
+.paymentSection .paymentSectionContainer .coupon div {
+  display: flex;
+  width: 100%;
+  height: 43px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #bebcbd;
+}
+
+.paymentSection .paymentSectionContainer .coupon div input {
+  background-color: var(--white);
+  width: 60%;
+  padding: 4px 10px 16px;
+}
+
+.paymentSection .paymentSectionContainer .coupon div button {
+  background-color: var(--primary-100);
+  color: var(--white);
+  width: 40%;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #bebcbd;
+}

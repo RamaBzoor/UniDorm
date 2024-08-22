@@ -1,0 +1,155 @@
+.container .reviewsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container .reviewsContainer .reviewsHeader h3 {
+  color: var(--Black-100, #1c1d22);
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.container .reviewsContainer .reviewsHeader h3 span {
+  color: #a6a8b1;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.container .reviewsContainer .reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container .reviewsContainer .reviews .reviewInput form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.container .reviewsContainer .reviews .reviewInput form button {
+  display: flex;
+  padding: 16px 20px;
+  justify-content: center;
+  max-width: 114px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  background: var(--Primary-100, #5570f1);
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  cursor: pointer;
+  transition: 400ms;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container .reviewsContainer .reviews .reviewInput form button:hover {
+  background-color: var(--primary-80);
+}
+
+.container .reviewsContainer .reviews .reviewsBox {
+  gap: 13px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.container .reviewsContainer .reviews .reviewsBox .firstRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.container .reviewsContainer .reviews .reviewsBox .firstRow .profileAndName {
+  display: flex;
+}
+
+.container
+  .reviewsContainer
+  .reviews
+  .reviewsBox
+  .firstRow
+  .profileAndName
+  img {
+  width: 41px;
+  height: 41px;
+  flex-shrink: 0;
+  border-radius: 41px;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.container .reviewsContainer .reviews .reviewsBox .firstRow .profileAndName p {
+  color: var(--Gray-Scale-Gray-900, #1a1a1a);
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+}
+
+.reviews .reviewsBox .firstRow .profileAndName .nameAndRate .stars img {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.reviews .reviewsBox .firstRow .Time p {
+  color: var(--Gray-Scale-Gray-400, #999);
+  text-align: right;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.reviews .reviewsBox .secondRow {
+  color: var(--Gray-Scale-Gray-500, #808080);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.container .reviewsContainer .seeMore {
+  align-self: center;
+}
+
+.container .reviewsContainer .seeMore button {
+  background-color: transparent;
+
+  color: var(--Secondary-100, #f8b32e);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  width: 198px;
+  height: 50px;
+  padding: 17px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: 400ms;
+  border: 2px solid var(--Secondary-100, #f8b32e);
+  box-shadow: 0px 4px 4px 0px rgba(255, 173, 51, 0.11);
+}
+
+.container .reviewsContainer .seeMore button:hover {
+  background-color: #807d7e13;
+}

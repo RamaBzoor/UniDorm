@@ -1,0 +1,23 @@
+.PropertiesPageHeading {
+  position: relative;
+}
+
+.PropertiesPageHeading h1 {
+  color: #000;
+
+  /* subHeading 1/Bold */
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.PropertiesPageHeading h1 span {
+  color: #5570f1;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

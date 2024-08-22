@@ -1,0 +1,396 @@
+.viewBooking .container .content .bookingBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 12px;
+}
+
+.viewBooking .container .content .bookingBoxes .bookingBox {
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  width: 344px;
+  padding: 5px 30px;
+  height: max-content;
+}
+
+.viewBooking .container .content .bookingBoxes .bookingBox .row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.viewBooking .container .content .bookingBoxes .bookingBox .row:last-child {
+  border-bottom: none;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.one
+  .row:nth-child(1)
+  h3 {
+  color: var(--primary-100);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.one
+  .row:nth-child(2),
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.one
+  .row:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.one
+  .row:nth-child(2)
+  span:nth-child(1) {
+  color: var(--Gray-Scale-Gray-900, #1a1a1a);
+  font-family: Roboto;
+  line-height: 150%; /* 24px */
+  font-weight: 500;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.one
+  .row:nth-child(2)
+  span:nth-child(2) {
+  color: #6e7079;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.one
+  .row:nth-child(3)
+  span:nth-child(1) {
+  color: #6e7079;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.one
+  .row:nth-child(3)
+  span:nth-child(2) {
+  color: var(--Gray-Scale-Gray-900, #1a1a1a);
+  font-family: Roboto;
+  line-height: 150%; /* 24px */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.one
+  .row:nth-child(4) {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.one
+  .row:nth-child(4)
+  div {
+  display: flex;
+  flex-direction: column;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.one
+  .row:nth-child(4)
+  div
+  span:nth-child(1) {
+  color: #6e7079;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.one
+  .row:nth-child(4)
+  div
+  span:nth-child(2) {
+  color: var(--Gray-Scale-Gray-900, #1a1a1a);
+  font-family: Roboto;
+  line-height: 150%; /* 24px */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.viewBooking .container .content .bookingBoxes .bookingBox.two .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.two
+  .row
+  .rowPointOne {
+  display: flex;
+  flex-direction: column;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.two
+  .row
+  .rowPointOne
+  span:nth-child(1) {
+  color: #6e7079;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.two
+  .row
+  .rowPointOne
+  span:nth-child(2) {
+  color: var(--Gray-Scale-Gray-900, #1a1a1a);
+  font-family: Roboto;
+  line-height: 150%; /* 24px */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.two
+  .row:nth-child(1)
+  span:last-child {
+  color: #ffad33;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  letter-spacing: 0.36px;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.two
+  .row:nth-child(2)
+  span:nth-child(1),
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.two
+  .row:nth-child(3)
+  span:nth-child(1) {
+  color: var(--Black-40, #6e7079);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.two
+  .row:nth-child(2)
+  span:nth-child(2),
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.two
+  .row:nth-child(3)
+  span:nth-child(2) {
+  color: var(--Black-100, #1c1d22);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.two
+  .row:nth-child(4)
+  span {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%; /* 27px */
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.two
+  .row:nth-child(4)
+  span:nth-child(1) {
+  color: var(--Black-100, #1c1d22);
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.two
+  .row:nth-child(4)
+  span:nth-child(2) {
+  color: var(--primary-100);
+}
+
+.viewBooking .container .content .bookingBoxes .bookingBox.three .specialRow {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.three
+  .specialRow
+  span:nth-child(1) {
+  color: var(--Gray-Scale-Gray-400, #999);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.three
+  .specialRow
+  span:nth-child(2) {
+  color: #5572f1;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+}
+
+.viewBooking .container .content .bookingBoxes .bookingBox.three .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.three
+  .row
+  span:nth-child(1) {
+  color: var(--Black-40, #6e7079);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+}
+
+.viewBooking
+  .container
+  .content
+  .bookingBoxes
+  .bookingBox.three
+  .row
+  span:nth-child(2) {
+  color: var(--Gray-Scale-Gray-900, #1a1a1a);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+}
+
+.propertyBookingHead {
+  color: #5570f1;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.propertyBookingDetails h4,
+.propertyBookingDetails h5 {
+  color: #5570f1;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.propertyBookingDetails p {
+  color: var(--Black-40, #6e7079);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+}

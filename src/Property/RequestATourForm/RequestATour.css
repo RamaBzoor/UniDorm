@@ -1,0 +1,181 @@
+.requestTourForm {
+  width: 1049px;
+  border-radius: 35px;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  z-index: 100;
+  left: 50%;
+  padding: 100px;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1200px) {
+  .requestTourForm {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .requestTourForm {
+    width: calc(100% - 40px);
+    padding: 30px;
+  }
+}
+
+@media (max-height: 1000px) {
+  .requestTourForm {
+    padding: 30px;
+  }
+}
+
+.lay {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  width: 100svw;
+  height: 100svh;
+  background-color: rgba(19, 15, 38, 0.4);
+  z-index: 99;
+}
+
+@media (max-height: 800px) {
+  .requestTourForm input {
+    height: 40px;
+  }
+}
+
+.requestTourForm .headerAndPhoto {
+  position: relative;
+}
+
+.requestTourForm .headerAndPhoto p {
+  color: #5570f1;
+
+  text-align: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.requestTourForm .headerAndPhoto img {
+  width: 32px;
+  height: 32px;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+}
+
+.requestTourForm .inputs {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.requestTourForm .inputs .nameAndEmail {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.requestTourForm .inputs .nameAndEmail,
+.requestTourForm .inputs .numberAndDate,
+.requestTourForm .inputs .dateAndTime {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+}
+
+.requestTourForm .inputs .numberAndDate .monthSelect {
+  padding: 8px 20px;
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #f1f3f9;
+}
+
+.requestTourForm .inputs .numberAndDate .monthSelect p {
+  color: #abafb1;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.requestTourForm .inputs .numberAndDate .monthSelect img {
+  width: 16px;
+  height: 16px;
+}
+
+.requestTourForm .inputs .dateAndTime input {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: content-box;
+}
+
+.requestTourForm .inputs .dateAndTimeAr input {
+  background-position: left center;
+}
+
+.requestTourForm .inputs .dateAndTime input:nth-child(1) {
+  background-image: url("../../../public/images/icons/date.svg");
+}
+
+.requestTourForm .inputs .dateAndTime input:nth-child(2) {
+  background-image: url("../../../public/images/icons/time.svg");
+}
+
+.requestTourForm .inputs .message textarea {
+  height: 298px;
+  width: 100%;
+  resize: none;
+}
+
+@media (max-height: 1000px) {
+  .requestTourForm .inputs .message textarea {
+    height: 118px;
+  }
+}
+
+.requestTourForm .inputs .sendBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.requestTourForm .inputs .sendBtn button {
+  display: flex;
+  width: 423px;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  background: var(--Primary-100, #5570f1);
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.requestTourForm .inputs .sendBtn button img {
+  width: 20px;
+  height: 20px;
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 9999999;
+}

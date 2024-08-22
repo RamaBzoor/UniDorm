@@ -1,0 +1,8 @@
+.reasonsToGetStarted {
+  margin-top: 80px;
+}
+@media (max-width: 768px) {
+  .reasonsToGetStarted .container .sectionHeading {
+    font-size: 20px;
+  }
+}

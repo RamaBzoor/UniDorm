@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900");
+
+.offer-section {
+  width: 100%;
+  min-height: 604px;
+  display: flex;
+  background: #f9f2e6;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.offer-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1440px;
+}
+
+@media (max-width: 990px) {
+  .offer-section .container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 76px 0 0 0;
+  }
+}
+
+.offer-section .container .texts {
+  flex-basis: 48%;
+}
+
+.offer-section .container .texts .offer-title {
+  color: #f00;
+  font-size: 32px;
+  font-weight: 700;
+  border-left: 5px solid #f00;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 990px) {
+  .offer-section .container .texts .offer-title {
+    font-size: 24px;
+  }
+}
+
+.offer-section .container .texts .offer-subtitle {
+  color: #1c1d22;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 990px) {
+  .offer-section .container .texts .offer-subtitle {
+    font-size: 32px;
+  }
+}
+
+.offer-section .container .texts .offer-description {
+  color: #53545c;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 990px)  {
+  .offer-section .container .texts .offer-description {
+    font-size: 16px;
+  }
+}
+
+.offer-section .container .texts .link-copy {
+  margin-top: 20px;
+}
+
+.offer-section .container .texts .link-copy p {
+  color: rgba(19, 15, 38, 0.54);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.offer-section .container .texts .link-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid var(--Black-1, #cfd3d4);
+  padding: 8px 16px;
+  width: 350px;
+  border-radius: 8px;
+}
+
+@media (max-width: 990px) {
+  .offer-section .container .texts .link-container {
+    width: 295px;
+  }
+}
+
+.offer-section .container .texts .link-container p {
+  color: #45464e;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (max-width: 990px) {
+  .offer-section .container .texts .link-container p {
+    font-size: 14px;
+  }
+}
+
+.offer-section .container .texts .ShareBtn {
+  display: flex;
+  width: 137px;
+  position: relative;
+  padding: 16px 20px;
+  border-radius: 12px;
+  justify-content: center;
+  margin-top: 17px;
+  align-items: center;
+  background: var(--primary-100);
+  box-shadow: 0px 4px 4px 0px rgba(255, 173, 51, 0.11);
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.offer-section .container .texts .ShareBtn:hover {
+  background: var(--primary-90);
+}
+
+.offer-section .container .texts .ShareBtn p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  margin-left: 13px;
+}
+
+.offer-section .container .texts .ShareBtn img {
+  width: 20px;
+  height: 20px;
+}
+
+.offer-section .container .texts .link-container img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-right: 28px;
+}
+
+.offer-section .container .offer-image {
+  flex-basis: 48%;
+  max-width: 460px;
+}
+
+.offer-section .container .offer-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 990px) {
+  .offer-section .container .offer-image img {
+    margin-right: 5px;
+  }
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 9999;
+}

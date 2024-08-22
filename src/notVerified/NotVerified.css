@@ -1,0 +1,17 @@
+.notVerifiedNav {
+  position: absolute;
+  top: 0;
+  background-color: #f8b32e;
+  width: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  display: flex;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}

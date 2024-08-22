@@ -1,0 +1,123 @@
+body {
+  overflow-x: hidden;
+}
+
+.dashboardMenu {
+  width: 200px;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  transition: 700ms;
+}
+
+.dashboardMenu.disappear {
+  translate: -220px;
+}
+
+.dashboardMenu .changePosition {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: var(--secondary-100);
+  left: 93%;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: 50% 0;
+  z-index: 99;
+  cursor: pointer;
+  transition: 700ms;
+}
+
+.dashboardMenu ul,
+.dashboardMenu ul li,
+.dashboardMenu ul li a,
+.dashboardMenu ul li button {
+  width: 200px;
+}
+
+.dashboardMenu ul li a,
+.dashboardMenu ul li button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-family: Roboto;
+  line-height: 150%; /* 24px */
+  padding: 20px 16px;
+  cursor: pointer;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: 300ms ease;
+  border-left: 0 solid var(--primary-100);
+}
+
+.dashboardMenu ul .specialLink a {
+  transition: 0;
+}
+
+.dashboardMenu ul li a.active {
+  opacity: 1;
+  background-color: #f1f3f9;
+  border-left: 4px solid var(--primary-100);
+}
+
+.dashboardMenu ul .specialLink a.active {
+  opacity: 1;
+  background-color: #1a1a1a;
+  color: #fff;
+  border-left: none;
+}
+
+.dashboardMenu ul li a:hover,
+.dashboardMenu ul li:nth-child(2) button:hover {
+  opacity: 1;
+  background-color: #f1f3f9;
+  border-left: 4px solid var(--primary-100);
+}
+
+.dashboardMenu ul .specialLink a:hover {
+  opacity: 1;
+  background-color: #1a1a1a;
+  color: #fff;
+  border-left: none;
+}
+
+.dashboardMenu ul li:last-child button:hover {
+  opacity: 1;
+  background-color: #e0121212;
+  border-left: 4px solid #ff3e3e;
+}
+
+.dashboardMenu ul li a img,
+.dashboardMenu ul li button img {
+  width: 18px;
+  aspect-ratio: 1;
+}
+
+.dashboard {
+  padding-right: 10px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    overflow-x: hidden;
+  }
+}
+
+.dashboard .container:last-child {
+  display: flex;
+  column-gap: 45px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.dashboard .content {
+  width: 100%;
+  transition: 700ms;
+}
